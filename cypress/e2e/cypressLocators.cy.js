@@ -16,7 +16,8 @@ describe('cyress Locators', () => {
         cy.get('.pms-button').click(); 
         cy.wait(5000)
 
-        // action
+        // action for test
+        // 1
 
         cy.get('div').find('ul').find('li').eq(5).click();
 
