@@ -9,13 +9,14 @@ describe('cyress Locators', () => {
         cy.visit('https://pms-staging.avangate.tech/');
         cy.wait(500)
 
+        // Login
         cy.get('[id="username"]').type('rolandtest14@gmail.com'); 
-
         cy.get('[id="password"]').type('test2121'); 
         cy.wait(500)
-
         cy.get('.pms-button').click(); 
         cy.wait(5000)
+
+        // action
 
         cy.get('div').find('ul').find('li').eq(5).click();
 
